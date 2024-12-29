@@ -25,7 +25,7 @@ exports.AddEmplyoee =async(req, res)=>{
 
         await newEmp.save();
 
-        return res.status(201).json({ message: 'Employee added to achivevers list', newEmp });
+        return res.status(201).json({ message: 'Employee added to achievers list', newEmp });
     }
     catch(err){
         return res.status(500).json({message:err.message});
